@@ -1,0 +1,134 @@
+{
+  "peliculas": [
+    {
+      "id": 1,
+      "title": "Harry Potter y la piedra filosofal",
+      "length": 152,
+      "sinopsis": "Harry descubre que es un mago y asiste por primera vez a Hogwarts.",
+      "year": 2001
+    },
+    {
+      "id": 2,
+      "title": "Harry Potter y la cámara secreta",
+      "length": 161,
+      "sinopsis": "Harry investiga una serie de ataques misteriosos en Hogwarts.",
+      "year": 2002
+    },
+    {
+      "id": 3,
+      "title": "Harry Potter y el prisionero de Azkaban",
+      "length": 141,
+      "sinopsis": "Harry investiga una serie de ataques misteriosos en Hogwarts.",
+      "year": 2004
+    },
+    {
+      "id": 4,
+      "title": "Harry Potter y el caliz de fuego",
+      "sinopsis": "Harry se enfrenta a un peligroso torneo entre escuelas de magia rivales",
+      "length": 157,
+      "year": 2004
+    },
+    {
+      "id": 5,
+      "title": "Harry Potter y la Orden del Fénix",
+      "length": 138,
+      "sinopsis": "Harry forma un grupo secreto para luchar contra Voldemort.",
+      "year": 2007
+    },
+    {
+      "id": 6,
+      "title": "Harry Potter y el misterio del príncipe",
+      "length": 153,
+      "sinopsis": "Harry descubre el pasado de Voldemort mientras se prepara para enfrentarlo.",
+      "year": 2009
+    },
+    {
+      "id": 7,
+      "title": "Harry Potter y las Reliquias de la Muerte – Parte 1",
+      "length": 146,
+      "sinopsis": "Harry y sus amigos buscan los Horrocruxes fuera de Hogwarts.",
+      "year": 2010
+    },
+    {
+      "id": 8,
+      "title": "Harry Potter y las Reliquias de la Muerte – Parte 2",
+      "length": 130,
+      "sinopsis": "Harry enfrenta su batalla final contra Voldemort en Hogwarts.",
+      "year": 2011
+    }
+  ],
+  "personajes": [
+    {
+      "id": 1,
+      "name": "Harry Potter",
+      "desc": "El protagonista de la serie, un joven mago conocido por sobrevivir a Voldemort."
+    },
+    {
+      "id": 2,
+      "name": "Hermione Granger",
+      "desc": "Amiga cercana de Harry, brillante estudiante de Hogwarts."
+    },
+    {
+      "id": 3,
+      "name": "Ron Weasley",
+      "desc": "Mejor amigo de Harry, conocido por su lealtad y humor."
+    },
+    {
+      "id": 4,
+      "name": "Albus Dumbledore",
+      "desc": "Director de Hogwarts, uno de los magos más poderosos y sabios."
+    },
+    {
+      "id": 5,
+      "name": "Lord Voldemort",
+      "desc": "El mago tenebroso más peligroso, enemigo de Harry."
+    },
+    {
+      "id": 6,
+      "name": "Severus Snape",
+      "desc": "Profesor de Pociones y personaje ambiguo con un pasado complejo."
+    }
+  ],
+  "pelicula_personaje": [
+    { "idPelicula": 1, "idPersonaje": 1 },
+    { "idPelicula": 1, "idPersonaje": 2 },
+    { "idPelicula": 1, "idPersonaje": 3 },
+    { "idPelicula": 1, "idPersonaje": 4 },
+
+    { "idPelicula": 2, "idPersonaje": 1 },
+    { "idPelicula": 2, "idPersonaje": 2 },
+    { "idPelicula": 2, "idPersonaje": 3 },
+    { "idPelicula": 2, "idPersonaje": 4 },
+
+    { "idPelicula": 3, "idPersonaje": 1 },
+    { "idPelicula": 3, "idPersonaje": 2 },
+    { "idPelicula": 3, "idPersonaje": 3 },
+    { "idPelicula": 3, "idPersonaje": 4 },
+
+    { "idPelicula": 4, "idPersonaje": 1 },
+    { "idPelicula": 4, "idPersonaje": 2 },
+    { "idPelicula": 4, "idPersonaje": 3 },
+    { "idPelicula": 4, "idPersonaje": 5 },
+
+    { "idPelicula": 5, "idPersonaje": 1 },
+    { "idPelicula": 5, "idPersonaje": 2 },
+    { "idPelicula": 5, "idPersonaje": 3 },
+    { "idPelicula": 5, "idPersonaje": 5 },
+
+    { "idPelicula": 6, "idPersonaje": 1 },
+    { "idPelicula": 6, "idPersonaje": 2 },
+    { "idPelicula": 6, "idPersonaje": 3 },
+    { "idPelicula": 6, "idPersonaje": 6 },
+
+    { "idPelicula": 7, "idPersonaje": 1 },
+    { "idPelicula": 7, "idPersonaje": 2 },
+    { "idPelicula": 7, "idPersonaje": 3 },
+    { "idPelicula": 7, "idPersonaje": 5 },
+
+    { "idPelicula": 8, "idPersonaje": 1 },
+    { "idPelicula": 8, "idPersonaje": 2 },
+    { "idPelicula": 8, "idPersonaje": 3 },
+    { "idPelicula": 8, "idPersonaje": 5 },
+    { "idPelicula": 8, "idPersonaje": 6 }
+  ]
+}
