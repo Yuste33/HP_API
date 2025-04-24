@@ -1,0 +1,11 @@
+{
+  "name": "HP_API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Yuste33/HP_API.git",
+  "author": "danie <3yuste3@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
