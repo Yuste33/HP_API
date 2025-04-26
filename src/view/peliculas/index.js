@@ -5,6 +5,7 @@ import controladorPeliculas from '../../controllers/peliculas/index.js';
 
 const router = Router();
 
+
 // Obtener todas las películas
 router.get('/', (req, res) => {
     res.send(controladorPeliculas.getAll());

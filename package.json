@@ -5,9 +5,11 @@
   "repository": "git@github.com:Yuste33/HP_API.git",
   "author": "danie <3yuste3@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "body-parser": "^2.2.0",
     "express": "^5.1.0",
-    "express-bearer-token": "^3.0.0"
+    "express-bearer-token": "^3.0.0",
+    "jsonwebtoken": "^9.0.2"
   }
 }

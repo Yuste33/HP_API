@@ -1,10 +1,11 @@
 'use strict';
 
 import { Router } from 'express';
-import PeliculaPersonajeController from '../../controllers/peliculaPersonaje/index.js';
+import PeliculaPersonajeController from '../../controllers/peliculasPersonajes/index.js';
 
 const router = Router();
 
+/*
 // Middleware de autenticación
 router.use((req, res, next) => {
     if (!req.user) {
@@ -12,6 +13,7 @@ router.use((req, res, next) => {
     }
     next();
 });
+*/
 
 // Obtener personajes que participan en una película
 router.get('/peliculas/:idPelicula/personajes', (req, res) => {

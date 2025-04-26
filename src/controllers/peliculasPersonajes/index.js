@@ -1,6 +1,6 @@
 'use strict';
 
-import PeliculaPersonajeModel from '../../models/peliculaPersonajeModel.js';
+import PeliculaPersonajeModel from '../../models/peliculasPersonajes/index.js';
 
 class PeliculaPersonajeController {
 
