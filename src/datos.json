@@ -61,32 +61,56 @@
     {
       "id": 1,
       "name": "Harry Potter",
-      "desc": "El protagonista de la serie, un joven mago conocido por sobrevivir a Voldemort."
+      "desc": "El protagonista de la serie, un joven mago conocido por sobrevivir a Voldemort.",
+      "vida": 120,
+      "magia": 100,
+      "fuerza": 40,
+      "defensa": 30
     },
     {
       "id": 2,
       "name": "Hermione Granger",
-      "desc": "Amiga cercana de Harry, brillante estudiante de Hogwarts."
+      "desc": "Amiga cercana de Harry, brillante estudiante de Hogwarts.",
+      "vida": 90,
+      "magia": 110,
+      "fuerza": 20,
+      "defensa": 20
     },
     {
       "id": 3,
       "name": "Ron Weasley",
-      "desc": "Mejor amigo de Harry, conocido por su lealtad y humor."
+      "desc": "Mejor amigo de Harry, conocido por su lealtad y humor.",
+      "vida": 130,
+      "magia": 60,
+      "fuerza": 50,
+      "defensa": 40
     },
     {
       "id": 4,
       "name": "Albus Dumbledore",
-      "desc": "Director de Hogwarts, uno de los magos más poderosos y sabios."
+      "desc": "Director de Hogwarts, uno de los magos más poderosos y sabios.",
+      "vida": 120,
+      "magia": 180,
+      "fuerza": 20,
+      "defensa": 20
     },
     {
       "id": 5,
       "name": "Lord Voldemort",
-      "desc": "El mago tenebroso más peligroso, enemigo de Harry."
+      "desc": "El mago tenebroso más peligroso, enemigo de Harry.",
+      "vida": 120,
+      "magia": 140,
+      "fuerza": 40,
+      "defensa": 30
     },
     {
       "id": 6,
       "name": "Severus Snape",
-      "desc": "Profesor de Pociones y personaje ambiguo con un pasado complejo."
+      "desc": "Profesor de Pociones y personaje ambiguo con un pasado complejo.",
+      "vida": 120,
+      "magia": 90,
+      "fuerza": 40,
+      "defensa": 30
     }
   ],
   "pelicula_personaje": [
