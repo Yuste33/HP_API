@@ -2,35 +2,41 @@
 
 import { Router } from 'express';
 import controladorPeliculas from '../../controllers/peliculas/index.js';
+import { requireAuth } from '../../middlewares/auth.js';
 
 const router = Router();
 
-
-// Obtener todas las películas
+// GET -> acceso libre
 router.get('/', (req, res) => {
     res.send(controladorPeliculas.getAll());
 });
 
-// Crear una nueva película
-router.post('/', (req, res) => {
+// POST -> protegido
+router.post('/', requireAuth, (req, res) => {
     const idNueva = controladorPeliculas.add(req.body);
     const peli = controladorPeliculas.getById(idNueva);
     res.send(peli);
 });
 
-// Preprocesar idPelicula (param middleware)
-router.param('idPelicula', (req, res, next, idPelicula) => {
-    const peli = controladorPeliculas.getById(idPelicula);
-    if (!peli) {
-        return res.status(404).send('Película no encontrada');
-    }
-    req.pelicula = peli;
-    next();
+// GET by id -> acceso libre
+router.get('/:idPelicula', (req, res) => {
+    const peli = controladorPeliculas.getById(req.params.idPelicula);
+    if (!peli) return res.status(404).send('Película no encontrada');
+    res.send(peli);
 });
 
-// Obtener una película específica
-router.get('/:idPelicula', (req, res) => {
-    res.send(req.pelicula);
+// PUT -> protegido
+router.put('/:idPelicula', requireAuth, (req, res) => {
+    const peliActualizada = controladorPeliculas.update(req.params.idPelicula, req.body);
+    if (!peliActualizada) return res.status(404).send('Película no encontrada');
+    res.send(peliActualizada);
+});
+
+// DELETE -> protegido
+router.delete('/:idPelicula', requireAuth, (req, res) => {
+    const borrada = controladorPeliculas.remove(req.params.idPelicula);
+    if (!borrada) return res.status(404).send('Película no encontrada');
+    res.send({ msg: 'Película eliminada' });
 });
 
 export default router;
